@@ -3,13 +3,13 @@
     <div v-for="controller in groupItem.children" class="controllers__item">
       <div class="controllers__header">
         <div class="controllers__name">
-          {{ controller.name }}
+          {{controller.name}}
         </div>
         <div class="controllers__type">
-          <strong>Тип:</strong> {{ controller.type }}
+          <strong>Тип:</strong> {{controller.type}}
         </div>
         <div class="controllers__description">
-          <strong>Описание:</strong> {{ controller.description }}
+          <strong>Описание:</strong> {{controller.description}}
         </div>
       </div>
       <div class="controllers__body">
@@ -17,11 +17,11 @@
           <div class="controllers__title">Параметры:</div>
           <div class="parameters__item" v-for="parameter in controller.parameters">
             <div :class="`controllers__in controllers__in--${parameter.in}`" v-if="parameter.in === 'path'">
-              <strong>Тип параметра:</strong> {{ parameter.type }}
+              <strong>Тип параметра:</strong> {{parameter.type}}
             </div>
             <div :class="`controllers__in controllers__in--${parameter.in}`" v-else>
-              <!-- {{ parameter.in }} -->
-              <div class="controllers__toggle" v-on:click="accordion">&rarr; <span>{{ parameter.schema.$ref }}</span></div>
+              <!-- {{parameter.in}} -->
+              <div class="controllers__toggle" v-on:click="accordion">&rarr; <span>{{parameter.schema.$ref}}</span></div>
               <controllerModel :link="parameter.schema.$ref"/>
             </div>
           </div>
@@ -71,8 +71,11 @@
 
     &__item {
       padding: 20px;
-      margin-top: 20px;
       box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+
+      + .controllers__item {
+        margin-top: 20px;
+      }
     }
 
     &__body {

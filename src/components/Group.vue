@@ -61,7 +61,7 @@
 
     &__body {
       display: none;
-      padding: 30px 20px;
+      padding: 20px;
       border: 1px solid #c9c9c9;
     }
   }
