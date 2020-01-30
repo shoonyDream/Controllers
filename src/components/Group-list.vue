@@ -1,7 +1,7 @@
 <template>
-  <div class="group-list">
+  <section class="section">
     <Group :Grouplist="GroupList" />
-  </div>
+  </section>
 </template>
 
 <script>
@@ -41,7 +41,3 @@
     }
   }
 </script>
-
-<style scoped lang="scss">
-  
-</style>

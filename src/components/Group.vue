@@ -1,5 +1,5 @@
 <template>
-  <section class="section group-list">
+  <div class="group-list">
     <div
       v-for="(GroupItem, i) in Grouplist" 
       class="group-list__item">
@@ -10,7 +10,7 @@
         <Controller :groupItem="GroupItem" />
       </div>
     </div>
-  </section>
+  </div>
 </template>
 
 <script>
@@ -36,10 +36,8 @@
 
 <style scoped lang="scss">
   .group-list {
-    &__item {
-      + .group-list__item {
-        margin-top: 40px;
-      }
+    &__item + &__item {
+      margin-top: 40px;
     }
 
     &__title {
@@ -62,7 +60,7 @@
     }
 
     &__body {
-      display:none;
+      display: none;
       padding: 30px 20px;
       border: 1px solid #c9c9c9;
     }

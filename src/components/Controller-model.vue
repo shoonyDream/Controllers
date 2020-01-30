@@ -85,10 +85,10 @@
     }
 
     &__name {
-      padding: 5px 15px;
       font-size: 16px;
       max-width: 100%;
       flex-basis: 100%;
+      padding: 5px 15px;
       margin-bottom: 10px;
       font-family: monospace;
       background-color: #d6d6d6;
@@ -104,4 +104,5 @@
       flex-basis: 80%;
     }
   }
+  
 </style>
