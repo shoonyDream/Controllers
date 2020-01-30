@@ -9,13 +9,13 @@
           <div class="properties__name">
             {{key}}
           </div>
-          <div class="properties__type">
+          <div class="properties__description" v-if="item.type === 'array' && item.items.$ref">
+            <strong>Тип:</strong> {{item.items.$ref}}
+          </div>
+          <div class="properties__type" v-else-if="item.type">
             <strong>Тип:</strong> {{item.type}}
           </div>
-          <div class="properties__description" v-if="item.type === 'array'">
-            <strong>Описание:</strong> {{item.items.$ref}}
-          </div>
-          <div class="properties__description" v-else>
+          <div class="properties__description" v-if="item.description">
             <strong>Описание:</strong> {{item.description}}
           </div>
         </div>
@@ -104,5 +104,5 @@
       flex-basis: 80%;
     }
   }
-  
+
 </style>
