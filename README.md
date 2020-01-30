@@ -1,4 +1,6 @@
-# control
+# Controllers
+
+## https://shoonydream.github.io/Controllers/
 
 ## Project setup
 ```
@@ -9,11 +11,3 @@ yarn install
 ```
 yarn serve
 ```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
