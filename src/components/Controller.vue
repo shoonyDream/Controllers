@@ -113,6 +113,10 @@
         margin-top: 20px;
       }
     }
+
+    &__accordion {
+      margin-top: 10px;
+    }
   }
 
   .parameters {
