@@ -65,4 +65,14 @@
       border: 1px solid #c9c9c9;
     }
   }
+
+  @media (max-width: 768px) {
+    .group-list {
+      margin: 0 -20px;
+
+      &__body {
+        padding: 0;
+    }
+  }
+  }
 </style>

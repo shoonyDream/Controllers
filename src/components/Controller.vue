@@ -143,9 +143,15 @@
   }
 
   @media (max-width: 768px) {
-    .controllers__name {
-      font-size: 20px;
-      margin-bottom: 10px;
+    .controllers {
+      &__name {
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+
+      &__item {
+        padding: 10px;
+      }
     }
   }
 

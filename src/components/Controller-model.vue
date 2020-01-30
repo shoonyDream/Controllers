@@ -107,7 +107,14 @@
   }
 
   @media (max-width: 768px) {
+    .controller-model {
+        padding: 0;
+        
+        border: none;
+    }
     .properties {
+      margin: 10px 0 0;
+
       &__type,
       &__description {
         max-width: 100%;
