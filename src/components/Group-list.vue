@@ -22,7 +22,8 @@
     methods: {
       groupedList(rawData) {
         let data = rawData.reduce((r, e) => {
-          let group = e.name[0];
+          let word = e.name.split('/');
+          let group = word[0];
           if(!r[group]) r[group] = {group, children: [e]}
           else r[group].children.push(e);
           return r;
