@@ -21,7 +21,7 @@
             </div>
             <div :class="`controllers__in controllers__in--${parameter.in}`" v-else>
               <!-- {{ parameter.in }} -->
-              <div class="controllers__toggle" v-on:click="accordion"><span>&rarr; {{ parameter.schema.$ref }}</span></div>
+              <div class="controllers__toggle" v-on:click="accordion">&rarr; <span>{{ parameter.schema.$ref }}</span></div>
               <controllerModel :link="parameter.schema.$ref"/>
             </div>
           </div>
@@ -29,12 +29,12 @@
         <div class="controllers__result">
           <div class="controllers__title">Ответ:</div>
           <div v-if="controller.result.$ref" class="controllers__accordion">
-            <div class="controllers__toggle" v-on:click="accordion"><span>&rarr; {{controller.result.$ref}}</span></div>
+            <div class="controllers__toggle" v-on:click="accordion">&rarr; <span>{{controller.result.$ref}}</span></div>
             <controllerModel :link="controller.result.$ref"/>
           </div>
           <div v-else-if="controller.result.items" class="controllers__accordion">
             <div v-for="item in controller.result.items">
-              <div class="controllers__toggle" v-on:click="accordion"><span>&rarr; {{controller.result.items.$ref}}</span></div>
+              <div class="controllers__toggle" v-on:click="accordion">&rarr; <span>{{controller.result.items.$ref}}</span></div>
               <controllerModel :link="controller.result.items.$ref"/>
             </div>
           </div>

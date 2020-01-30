@@ -31,9 +31,6 @@
         let result = Object.values(data);
         
         return this.GroupList = result;
-      },
-      accordion: function(e) {
-        e.target.classList.toggle('active')
       }
     },
     mounted: function() {
