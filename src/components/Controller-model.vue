@@ -106,4 +106,18 @@
     }
   }
 
+  @media (max-width: 768px) {
+    .properties {
+      &__type,
+      &__description {
+        max-width: 100%;
+        flex-basis: 100%;
+      }
+
+      &__type + &__description {
+        margin-top: 5px;
+      }
+    }
+  }
+
 </style>
