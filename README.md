@@ -1,4 +1,6 @@
-# control
+# Controllers
+
+## https://shoonydream.github.io/Controllers/
 
 ## Project setup
 ```
