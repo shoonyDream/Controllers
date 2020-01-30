@@ -98,6 +98,7 @@
 
     &__toggle {
       color: #FF9E7F;
+      word-break: break-all;
 
       > span {
         cursor: pointer;

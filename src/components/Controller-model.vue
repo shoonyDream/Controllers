@@ -9,7 +9,7 @@
           <div class="properties__name">
             {{key}}
           </div>
-          <div class="properties__description" v-if="item.type === 'array' && item.items.$ref">
+          <div class="properties__type" v-if="item.type === 'array' && item.items.$ref">
             <strong>Тип:</strong> {{item.items.$ref}}
           </div>
           <div class="properties__type" v-else-if="item.type">
@@ -53,6 +53,7 @@
     &__name {
       font-size: 18px;
       font-weight: 600;
+      word-break: break-all;
     }
   }
 
