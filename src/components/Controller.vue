@@ -17,7 +17,7 @@
           <div class="controllers__title">Параметры:</div>
           <div class="parameters__item" v-for="parameter in controller.parameters">
             <div :class="`controllers__in controllers__in--${parameter.in}`" v-if="parameter.in === 'path'">
-              <strong>Тип параметра:</strong> {{parameter.type}}
+              {{parameter.type}}
             </div>
             <div :class="`controllers__in controllers__in--${parameter.in}`" v-else>
               <!-- {{parameter.in}} -->
@@ -96,6 +96,17 @@
       border-top: 1px solid #c1c1c1;
     }
 
+    &__in--path {
+      top: 0;
+      right: 0;
+      color: #fff;
+      padding: 5px;
+      font-size: 13px;
+      position: absolute;
+      border-radius: 5px;
+      background-color: #c1c1c1;
+  }
+
     &__toggle {
       color: #FF9E7F;
       word-break: break-all;
@@ -124,6 +135,8 @@
   }
 
   .parameters {
+    position: relative;
+
     &__item {
       margin-top: 10px;
     }
