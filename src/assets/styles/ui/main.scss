@@ -1,0 +1,139 @@
+*,*:after,*:before {
+  box-sizing: border-box;
+}
+
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+}
+
+html {
+}
+
+ol,ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption,td,th {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+blockquote,q {
+  quotes: none;
+}
+blockquote:after,blockquote:before,q:after,q:before {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary {
+  display: block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden],template {
+  display: none;
+}
+
+html,
+body,
+#app,
+.body {
+	height: 100%;
+}
+
+.body {
+	color: #333;
+	width: 100%;
+	display: flex;
+	min-width: 320px;
+	min-height: 100vh;
+	flex-direction: column;
+	background-color: #fff;
+}
+
+//
+// Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+//
+b, strong {
+	font-weight: 600;
+}
+
+em, i, dfn, cite {
+	font-style: italic;
+}
+
+//
+// Prevent `sub` and `sup` affecting `line-height` in all browsers.
+//
+sub, sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sup {
+	top: -0.5em;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+small {
+	font-size: 80%;
+}
+
+mark {
+	background-color: #000;
+	color: #000;
+}
+
+//
+// Remove border when inside `a` element in IE 8/9/10.
+//
+img {
+	border: 0;
+}
+
+//
+// Correct overflow not hidden in IE 9/10/11.
+//
+svg:not(:root) {
+	overflow: hidden;
+}
+
+//
+// Address differences between Firefox and other browsers.
+//
+hr {
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	height: 0;
+}
+
+//
+// Contain overflow in all browsers.
+//
+pre {
+	overflow: auto;
+}
