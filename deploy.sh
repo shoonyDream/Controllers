@@ -2,8 +2,6 @@
 set -e
 
 # build
-echo Linting..
-npm run lint
 echo Building. this may take a minute...
 npm run build
 
